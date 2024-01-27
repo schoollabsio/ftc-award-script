@@ -85,6 +85,7 @@ async function main(args) {
             `Award: ${awards}`,
         ].join('\n')},
     ])
+    console.log(JSON.stringify(response, null, 2))
     return { headers: {
         ['Content-Type']: 'application/json'
     }, body: JSON.stringify({response, args}) }
