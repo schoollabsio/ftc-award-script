@@ -1,12 +1,5 @@
 parameters: {}
 environment: {}
-ingress:
-  rules:
-  - component:
-      name: get
-    match:
-      path:
-        prefix: /
 packages:
     - name: ftc-award-script
       shared: false
