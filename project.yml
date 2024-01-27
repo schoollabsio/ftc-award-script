@@ -12,7 +12,6 @@ packages:
           main: ""
           runtime: nodejs:18
           web: true
-          webSecure: false
           parameters: {}
           annotations: {}
           limits: {}
@@ -21,7 +20,6 @@ packages:
           main: ""
           runtime: nodejs:18
           web: true
-          webSecure: false
           parameters: {}
           annotations: {}
           limits: {}
