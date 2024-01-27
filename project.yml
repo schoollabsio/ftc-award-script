@@ -1,5 +1,12 @@
 parameters: {}
 environment: {}
+ingress:
+  rules:
+  - component:
+      name: get
+    match:
+      path:
+        prefix: /
 packages:
     - name: ftc-award-script
       shared: false
@@ -26,9 +33,3 @@ packages:
           annotations: {}
           limits: {}
 
-      # Added services section
-      services:
-        - name: ftc-award-script
-          routes:
-            - path: /
-              function: get
