@@ -1,0 +1,27 @@
+parameters: {}
+environment: {}
+packages:
+    - name: ftc-award-script
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: get
+          binary: false
+          main: ""
+          runtime: nodejs:18
+          web: true
+          webSecure: false
+          parameters: {}
+          annotations: {}
+          limits: {}
+        - name: post
+          binary: false
+          main: ""
+          runtime: nodejs:18
+          web: true
+          webSecure: false
+          parameters: {}
+          annotations: {}
+          limits: {}
