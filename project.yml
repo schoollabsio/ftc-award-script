@@ -25,3 +25,10 @@ packages:
           parameters: {}
           annotations: {}
           limits: {}
+
+      # Added services section
+      services:
+        - name: ftc-award-script
+          routes:
+            - path: /
+              function: get
