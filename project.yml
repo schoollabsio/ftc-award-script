@@ -4,13 +4,8 @@ packages:
     - name: ftc-award-script
       shared: false
       environment:
-        - key: POST_ENDPOINT
-          scope: RUN_TIME
-          value: https://dolphin-app-8el9v.ondigitalocean.app/ftc-award-script/post
-        - key: OPENAI_API_KEY
-          scope: RUN_TIME
-          type: SECRET
-          value: ${OPENAI_API_KEY}
+        POST_ENDPOINT: https://dolphin-app-8el9v.ondigitalocean.app/ftc-award-script/post
+        OPENAI_API_KEY: ${OPENAI_API_KEY}
       parameters: {}
       annotations: {}
       functions:
