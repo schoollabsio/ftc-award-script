@@ -5,6 +5,7 @@ packages:
       shared: false
       environment: {
         POST_ENDPOINT: https://dolphin-app-8el9v.ondigitalocean.app/ftc-award-script/post
+        OPENAI_API_KEY: EV[1:ujX6WVMh+iBW8PCZwCcM56Hzct2js9Jg:QBsNlwvhO0nesmrx/QEbjk2Y9TCqfTcXZArgOLODapZM9yrdu2xm4QCkJ1CsSg2zSrqZFSaHCEbPFVNiXU/a6Tx2TQ==]
       }
       parameters: {}
       annotations: {}
