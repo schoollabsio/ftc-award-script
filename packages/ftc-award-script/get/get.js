@@ -78,6 +78,7 @@ function render() {
                         <option value="Control">Control</option>
                         <option value="Motivate">Motivate</option>
                         <option value="Design">Design</option>
+                        <option value="Grit">Grit</option>
                     </select>
 
                     <div class="flex flex-row justify-center">
