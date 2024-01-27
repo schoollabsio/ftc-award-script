@@ -3,7 +3,9 @@ environment: {}
 packages:
     - name: ftc-award-script
       shared: false
-      environment: {}
+      environment: {
+        POST_ENDPOINT: https://dolphin-app-8el9v.ondigitalocean.app/ftc-award-script/get
+      }
       parameters: {}
       annotations: {}
       functions:
