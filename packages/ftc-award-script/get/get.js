@@ -2,6 +2,7 @@ function render() {
     return `
         <html>
             <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
                 <script src="https://cdn.tailwindcss.com"></script>
                 <script>
 
@@ -54,7 +55,7 @@ function render() {
                     }
                 </script>
             </head>
-            <body class="flex justify-center items-center h-screen bg-gray-100">
+            <body class="flex justify-center items-center h-screen bg-gray-100 sm:text-base">
                 <div class="p-6 md:w-1/3 w-full md:h-auto h-full mx-auto bg-white rounded-xl shadow-md flex flex-col space-y-4">
 
                     <img class="mx-auto h-24 w-auto" src="https://jschool.nyc3.cdn.digitaloceanspaces.com/hero.jpg" alt="FTC Awards Script Logo" />
