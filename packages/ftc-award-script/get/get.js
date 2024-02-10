@@ -6,5 +6,9 @@ function render() {
 }
 
 async function main(args) {
-    return { body: render() };
+    try {
+        return { body: render() };
+    } catch (e) {
+        return { body: e.stack };
+    }
 }
