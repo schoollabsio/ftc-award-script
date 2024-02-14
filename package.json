@@ -1,0 +1,19 @@
+{
+  "name": "ftc-award-script",
+  "version": "1.0.0",
+  "description": "Simple DigitalOcean app to generate awards scripts for First Tech Challenege award ceremonies.",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "node app/main.js",
+    "dev": "env $(cat .env) nodemon -w . app/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "4.26.0"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.3"
+  }
+}
