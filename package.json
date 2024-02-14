@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": ">=21"
+  },
   "name": "ftc-award-script",
   "version": "1.0.0",
   "description": "Simple DigitalOcean app to generate awards scripts for First Tech Challenege award ceremonies.",
