@@ -9,7 +9,14 @@
   "scripts": {
     "start": "node app/main.js",
     "dev": "env $(cat .env) nodemon -w . app/main.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ci:build": "docker build -t registry.digitalocean.com/schoollabsio/ftc-awards-script:$(git rev-parse --short HEAD) .",
+    "ci:build:local": "docker build -t registry.digitalocean.com/schoollabsio/ftc-awards-script:local .",
+    "compose": "docker-compose -f base.yml -f local.yml up",
+    "compose:build": "docker-compose -f base.yml -f local.yml up --build",
+    "compose:generate:staging": "./generate-env-yml.sh staging-template.yml staging.yml",
+    "compose:sync:staging": "rsync -cv base.yml staging.yml deploy-staging.sh root@staging.schoollabs.io:~/ftc-awards-script",
+    "push:image": "docker push registry.digitalocean.com/schoollabsio/ftc-awards-script:$(git rev-parse --short HEAD)"
   },
   "author": "",
   "license": "ISC",
