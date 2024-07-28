@@ -4,7 +4,7 @@ services:
   ftcawards:
     networks:
       - interlink_network
-    image: registry.digitalocean.com/schoollabsio/ftc-awards-script:${COMMIT_SHA}
+    image: registry.digitalocean.com/schoollabsio/ftc-award-script:${COMMIT_SHA}
     command: npm run start
 
 networks:
